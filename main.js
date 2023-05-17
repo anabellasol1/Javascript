@@ -7,7 +7,7 @@ let edad = parseInt(prompt ("¿Cuántos años tenés?"));
 if (edad >= 18) {
     alert("¡Genial! Ya podemos proceder a la compra");
 
-    alert ("¿Cuántos cafés vas a pedir? Cada uno te sale $1200");
+    alert ("¿Cuántas bolsas de café vas a pedir? Cada una te sale $1200");
 
     let cantidad = parseInt(prompt("Ingrese la cantidad"));
 
@@ -30,7 +30,7 @@ if (edad >= 18) {
     alert(`El total es $ ${resultado}`);
 }
 else {
-    alert("Lo siento. Necesitás ser mayor de edad.")
+    alert("Lo siento. Necesitás ser mayor de edad.");
 }
 
 alert ("¿Con qué medio de pago vas a pagar?");
