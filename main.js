@@ -1,31 +1,36 @@
-let nombre = prompt("Ingrese su nombre por favor");
-alert(`¡Hola ${nombre}! Espero te encuentres muy bien`);
+let nombre = parseInt(prompt ("Hola, ¿Cuál es tu nombre?"))
 
-let edad = prompt("¿Qué edad tenés?");
+alert (`¡Hola ${nombre} ¿Cómo estás?`);
+
+let edad = parseInt(prompt ("¿Cuántos años tenés?"));
 
 if (edad >= 18) {
-    alert("¡Genial! Cada cerveza está $1200, ¿Cuántas cervezas te preparamos?")
+    alert("¡Genial! Ya podemos proceder a la compra");
 
-    let cantidad = prompt("Ingrese la cantidad");
+    alert ("¿Cuántos cafés vas a pedir? Cada uno te sale $1200");
 
-for (let i = 1; i <= cantidad ; i++){
+    let cantidad = parseInt(prompt("Ingrese la cantidad"));
 
-let gusto = prompt("Ingrese la variedad de cerveza");
+    for (let i = 1; i <= cantidad; i++) {
 
-alert(`Solicitó una: ${gusto}`);
+        let gusto = prompt("Ingrese la variedad de café");
 
-}
+        alert(`Solicitó un: ${gusto}`);
 
-let precio = 1200;
+    }
 
-function multiplicar (n1, n2){
-    resultado = n1 * n2;
-};
+    let precio = 1200;
 
-multiplicar (cantidad, precio);
+    function multiplicar(n1, n2) {
+      resultado = n1 * n2;
+    };
 
-alert (`El total es $ ${resultado}`);
+    multiplicar(cantidad, precio);
+
+    alert(`El total es $ ${resultado}`);
 }
 else {
     alert("Lo siento. Necesitás ser mayor de edad.")
 }
+
+alert ("¿Con qué medio de pago vas a pagar?");
